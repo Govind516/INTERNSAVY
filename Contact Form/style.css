@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #333333;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h3 {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .nav_list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav_list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease-out;
+  }
+  
+  .nav_list li a:hover {
+    color: aqua;
+  }
+  
+  /* Contact Section Styles */
+  .contact {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .form {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form input[type="text"],
+  .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .form button[type="submit"]:hover {
+    background-color: #555555;
+  }
+  
+  .social {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    padding: 8px 15px;
+    color: white;
+    background-color: #333333;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    margin-bottom: 10px; /* Set the bottom margin to 10px */
+}
+  
+  .social li :hover {
+    background-color: #555555;
+  }
