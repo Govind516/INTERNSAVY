@@ -1,0 +1,214 @@
+/* Global CSS */
+
+:root {
+  --mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  --sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+  background-color: #0a192f;
+  font-size: 1em;
+}
+.container {
+  max-width: 50em;
+  margin: 0 auto;
+}
+h1, h2, h3{
+  color: white;
+}
+p {
+  color: #ccd6f6;
+  line-height: 1.6;
+}
+ul {
+  list-style-type: none;
+  margin-left: 1.25em;
+}
+.special {
+  color: aqua;
+  font-family: var(--mono);
+}
+section{
+  padding: 3.125em;
+  margin: 5em auto;
+}
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+}
+
+/* HEADER */
+
+header {
+  background-color: #0a192f;
+  padding: 1.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(224, 210, 210, 0.2);
+}
+.logo img {
+  height: 3.125em;
+  width: 3.125em;
+}
+.nav_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav_list li {
+  margin-right: 2em;
+}
+.nav_link {
+  text-decoration: none;
+  color: white;
+  padding: 0.313em;
+}
+.nav_list li:hover .nav_link {
+  color: aqua;
+}
+
+/* HOME */
+
+.Home h1 {
+  font-size: 3.125em;
+}
+.Home h2 {
+  font-size: 2em;
+  color: #9e9d9d;
+}
+.Home_btn {
+  color: aqua;
+  font-family: var(--mono);
+  background: none;
+  border: 0.1em solid aqua;
+  border-radius: 0.5em;
+  padding: 0.625em;
+  transition: background-color 0.3s ease-in;
+}
+.Home_btn:hover {
+  background-color:slateblue;
+}
+
+/* ABOUT */
+
+.about_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10em;
+}
+.about_info p {
+  margin-bottom: 0.625em;
+}
+.Profile {
+  width: 10em;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* EXPERIENCE */
+
+.exp{
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  align-items: flex-start;
+}
+.exp_list{
+    display: grid;
+    z-index: 3;
+    width: max-content;
+    list-style: none;
+}
+.exp_list button{
+  color: #9e9d9da5;
+  font-family: var(--mono);
+  background-color: transparent;
+  border: none;
+  border-left: 0.125em solid #9e9d9da5;
+  padding: 0.625em; 
+  font-size: 16px; 
+}
+.exp_list button:hover{ 
+  background-color:#1717655d; 
+  color: aqua; 
+  border-color: aqua;
+  transition: 0.3s ease-in;
+}
+.exp_info ul li ::before{
+  content: "\00BB";
+}
+.exp_info li p{
+  color: #9e9d9d;
+  font-size: 0.875em;
+  margin: 0;
+}
+
+/* CONTACT */
+
+.info {
+  display: block;
+  justify-items: center;
+}
+.info h1{
+    font-size: 3.125em;
+    text-align: center;
+}
+.form {
+  display: grid;
+  max-width: 20em;
+}
+.form label{
+  color: white;
+  margin-bottom: 1em;
+}
+.form input[type="text"],
+.form textarea {
+  display: block;
+  padding: 10px;
+  margin-bottom: 1em;
+  border: 0.125em solid #ccc;
+  border-radius: 1.3em;
+  resize: vertical;
+}
+.info button{
+  color: aqua;
+  font-family: var(--mono);
+  background: none;
+  border: 0.1em solid aqua;
+  border-radius: 0.5em;
+  padding: 0.625em;
+  transition: background-color 0.3s ease-in;
+}
+.info button:hover {
+  background-color:slateblue;
+}
+
+/* FOOTER */
+
+footer{
+  box-shadow: 0 -4px 4px rgba(224, 210, 210, 0.2);
+}
+.footer_list{
+  display: flex;
+  justify-content: center;
+}
+.footer_list a{
+  padding-top: 0.5em;
+  font-size: 30px;
+  width: 50px;
+  color:#9e9d9da5;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  color: #ccd6f6;
+}
